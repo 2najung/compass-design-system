@@ -1,6 +1,5 @@
-// Design tokens will be added here
-// Export your color, typography, spacing tokens etc.
-
-export const tokens = {
-  // Colors, typography, spacing, etc. will be defined here
-}
+export { fontFamily } from './fontFamily';
+export { fontSize } from './fontSize';
+export { lineHeight } from './lineHeight';
+export { fontWeight } from './fontWeight';
+export { letterSpacing } from './letterSpacing';
