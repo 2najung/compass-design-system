@@ -49,18 +49,19 @@ const FontWeightDisplay = () => {
   );
 };
 
-const meta = {
-  title: 'Foundation/Typography/Font Weight',
+const meta: Meta<typeof FontWeightDisplay> = {
+  title: 'Foundation/Typography',
   component: FontWeightDisplay,
   parameters: {
     layout: 'padded',
   },
-} satisfies Meta<typeof FontWeightDisplay>;
+};
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const FontWeight: Story = {};
 
 const Container = styled.div`
   max-width: 1200px;

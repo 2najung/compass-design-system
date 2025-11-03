@@ -42,18 +42,19 @@ const LineHeightDisplay = () => {
   );
 };
 
-const meta = {
-  title: 'Foundation/Typography/Line Height',
+const meta: Meta<typeof LineHeightDisplay> = {
+  title: 'Foundation/Typography',
   component: LineHeightDisplay,
   parameters: {
     layout: 'padded',
   },
-} satisfies Meta<typeof LineHeightDisplay>;
+};
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const LineHeight: Story = {};
 
 const Container = styled.div`
   max-width: 1200px;

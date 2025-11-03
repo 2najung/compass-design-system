@@ -57,18 +57,19 @@ const FontFamilyDisplay = () => {
   );
 };
 
-const meta = {
-  title: 'Foundation/Typography/Font Family',
+const meta: Meta<typeof FontFamilyDisplay> = {
+  title: 'Foundation/Typography',
   component: FontFamilyDisplay,
   parameters: {
     layout: 'padded',
   },
-} satisfies Meta<typeof FontFamilyDisplay>;
+};
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const FontFamily: Story = {};
 
 const Container = styled.div`
   max-width: 1200px;

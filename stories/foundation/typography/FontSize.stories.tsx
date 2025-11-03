@@ -42,18 +42,19 @@ const FontSizeDisplay = () => {
   );
 };
 
-const meta = {
-  title: 'Foundation/Typography/Font Size',
+const meta: Meta<typeof FontSizeDisplay> = {
+  title: 'Foundation/Typography',
   component: FontSizeDisplay,
   parameters: {
     layout: 'padded',
   },
-} satisfies Meta<typeof FontSizeDisplay>;
+};
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const FontSize: Story = {};
 
 const Container = styled.div`
   max-width: 1200px;

@@ -36,18 +36,19 @@ const LetterSpacingDisplay = () => {
   );
 };
 
-const meta = {
-  title: 'Foundation/Typography/Letter Spacing',
+const meta: Meta<typeof LetterSpacingDisplay> = {
+  title: 'Foundation/Typography',
   component: LetterSpacingDisplay,
   parameters: {
     layout: 'padded',
   },
-} satisfies Meta<typeof LetterSpacingDisplay>;
+};
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const LetterSpacing: Story = {};
 
 const Container = styled.div`
   max-width: 1200px;
